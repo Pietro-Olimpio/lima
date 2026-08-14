@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias HTML</title>
+</head>
+<body>
+    <h1>
+        Categorias de conteudo HTML5
+    </h1>
+    <h3>Elementos de bloco</h3>
+    <p>ocupam toda largura disponivel, exemplo:  &lt;div&gt;&lt;p&gt;&lt;h1&gt;, &lt;select&gt;, &lt;article&gt;
+        <h3>    
+            Elementos de linha
+        </h3>
+        <p>
+            Ocupao apenas o espaço necessário na linha, exemplo:  &lt;a&gt;&lt;span&gt;&lt;strong&gt;, &lt;em&gt;, &lt;img&gt;
+        </p>
+
+<h5>   Regras importantes
+</h5>
+<p>
+    Elementos de linha não devem conter elementos de bloco
+</p>
+<h6>
+    Exemplos incorreto:
+</h6>
+<span><div>Texto</div></span>
+
+<h6>
+    Exemplo certo:
+</h6>
+<p>
+    <div><span>Texto</span></div>
+</p>
+<h3>
+    Categoria de conteudo:
+</h3>
+<h4>   
+    Metadata content
+</h4>
+<p>
+    são informações de configuração do arquivo html </p>
+<p>&lt;title&gt;informa o titulo da pagina </p>
+<p>&lt;meta&gt;Para definir codificação</p>
+<p>&lt;link&gt; e &lt;style&gt; Importar/anexar CSS </p>
+<p>&lt;script&gt; importa O JS </p>
+
+<h4>
+    Flow content
+</h4>
+<p>
+    Representa a maior parte dos elementos usados no body</p>
+    <p>&lt;div&gt;criar uma divisão generica, agrupar "pedaços" de codigo</p>
+<p>&lt;p&gt; criar paragrafo dentro da pagina</p>
+<p>&lt;section&gt; agrupa conteudos que partilhão do mesmo assunto/ideia</p>
+<p>&lt;article&gt; conteudo independente, e comleto por si só(faz sentido sozin)</p>
+<p>&lt;img&gt;importar imagem, desenho, foto (não precisa de tag de fechamento)</p>
+<p>&lt;from&gt; criar formularios, usuario oide digitar dados e/ou enviar mensagem, fazer loguin</p>
+<h4>Sectioning Content</h4>
+<p>
+    Organizar grandes areas do documento
+</p>
+
+<p>&lt;section&gt; agrupa conteudos que partilhão do mesmo assunto/ideia</p>
+
+<p>&lt;article&gt; conteudo independente, e comleto por si só(faz sentido sozin)</p>
+<p>&lt;aside&gt;Serve para guardar o conteudo secundario/lateral (links relacionados, anuncios, biorafias)</p>
+
+<p>&lt;nav&gt; agrupar links de navegação</p>
+
+<h4>Heading Content
+    
+</h4>
+
+<p>
+    h1, h2, h3, h4, h5 e h6: Adicionar titulos e sbtitulos
+</p>
+
+<p>&lt;hgroup&gt; Agrupar elementos de titulo, exemplo:
+    <hgroup>
+        <h5>Aprenda HTML</h5>
+        <h6>SENAI americana</h6>
+        
+    </hgroup>
+    
+</p>
+
+<h4>Phraseing content</h4>
+<p>
+    Elementos que marcam textos ou partes de textos
+</p>
+
+<p>&lt;span&gt; um bloco generico, nao muda nada sozinho, porem pode aplicar CSS ou chamar funções/comportamento com  JavaScript</p>
+
+
+<p>
+    &lt;a&gt; Para anexar/criar links, utilizando o atributo href. Exemplo:
+    <a href="https://bitcoin.org/en/bitcoin-core/" target="_blank">
+        clique para conhecer o bitcoin
+    </a>
+</p>
+<p>&lt;strong&gt; deixar uma parte do texto em <strong>negrito</strong></p>
+<p>&lt;em&gt;deixa o texto em <em>italico</em></p>
+</p>
+<p>&lt;mark&gt; serve para <mark style="background-color: rgb(100, 210, 202);">Marcar</mark> uma parte do texto</p>
+
+<p>&lt;img&gt;importar imagem, desenho, foto (não precisa de tag de fechamento)</p>
+
+<h4>
+    Embedded content
+</h4>
+<p>Utilizado para inserir um conteudo externo</p>
+
+<p>&lt;img&gt;importar imagem, desenho, foto (não precisa de tag de fechamento)</p>
+
+<p>&lt;video&gt; para adicionar um video(pode mostrar botões de play e pause)</p>
+<p>&lt;canvas&gt; cria uma tela em branco que pode ser usada pelo JavaScript</p>
+<p>&lt;svg&gt; vai desenhar graficos baseados em vetores</p>
+<p>
+    &lt;iframe&gt; coloca outra pagina inteira dentro do seu website
+    (muito usado para adicionar mapas e videos)
+</p>
+
+<h4>
+    Interactive Content
+</h4>
+<p>Serve para interações com o usuario</p>
+
+<p>&lt;a&gt; Para anexar/criar links, utilizando o atributo href. Exemplo: </p>
+
+<p>&lt;button&gt;cria um <button>botão</button></p>
+<p>&lt;input&gt; receber dados do usuario. Exemplo. Dentre os dados aceitavos estão:</p>
+<p>type="text" campo de texto curto
+    type= "password" oculta os caracteres digitados;
+    type= "email" ou "number": valida dados especificos;
+    type= "checkbox" ou "radio": caixas de marcação e escolha unica
+    type é uma tag que n precisa de fechamento
+</p>
+
+<p>&lt;select&gt; criar uma caixa de seleção em formato de linha suspensa(dropdown)</p>
+Exemplo:
+<p>
+<select name="frutas" id="fruta">
+    <option value="" disabled selected> selecione uma opcao</option>
+    <option value="maça">maça</option>
+    <option value="banana">banana</option>
+    <option value="morango">morango</option>
+</select>
+<p>
+    &lt;textarea&gt; criar uma caixa com varias linhas, serve para textos longos, comentatios, mesagnes e biografias
+</p>
+
+
+<h4> Lista em html</h4>
+<p>Lista nao ordenada (ul). exemplos:</p>
+<ul>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+</ul>
+
+<p> Lista ordenada (ol). exemplo</p>
+<ol>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+</ol>
+
+
+
+
+
+
+</body>
+</html>
