@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Pesquisa de Satisfação</h1>
+    <form action="">
+        <label for="nome">Nome:</label>
+        <br>
+        <input type="text" name="nome" id="nome" required placeholder="Digite o nome completo">
+        <br><br>
+
+        <label for="email">Email</label>
+        <br>
+        <input type="email" name="email" id="email" required placeholder="Digite seu email">
+        <br><br>
+        
+        <label for="telefone">telefone:</label>
+        <br>
+        <input type="tel" id="telefone" pattern="[0-9]{00000-0000}" placeholder="(00)00000-0000">
+        <br><br>
+
+       <label for="Avaliação"><strong>Avaliação Geral:</strong>
+        <br>
+        
+        <input type="radio" name="Otimo" value="1" required>Otimo
+        <br>
+        
+        <input type="radio" name="Otimo" value="1" required>Bom
+        <br>
+        
+        <input type="radio" name="Otimo" value="1" required>Regular
+        <br>
+        
+        <input type="radio" name="Otimo" value="1" required>Ruim
+        <br><br>
+    </label>
+
+   <label for="Serviços"><strong>Serviços Utilizados:</strong>
+    <br>
+
+    <input type="checkbox" name="Atendimento" value="1" >Atendimento
+    <br>
+    
+    <input type="checkbox" name="Suporte" value="1" >Suporte
+    <br>
+    
+    <input type="checkbox" name="Treinamento" value="1" >Treinamento
+    <br>
+    
+    <input type="checkbox" name="Consultoria" value="1" >Consultoria
+    <br><br>
+
+
+
+</label>
+<!-- Unidade atentida -->
+<label for="unidade"><strong>Unidade Atendida:</strong></label>
+
+<select name="unidade" id="unidade" required>
+    <option value="americana">Americana</option>
+    <option value="santa_barbara">Santa Bárbara d'Oeste</option>
+    <option value="nova_odessa">Nova Odessa</option>
+</select>
+
+</label>
+<br><br>
+
+
+
+
+
+        <button type="submit">Cadastrar</button>
+
+    </form>
+</body>
+</html>
