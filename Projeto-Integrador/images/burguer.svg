@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 130" width="280" height="130">
+  <!-- Thumbnail: Burguer Analytic (troque por um print real depois) -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a100b"/>
+      <stop offset="1" stop-color="#301a0d"/>
+    </linearGradient>
+  </defs>
+  <rect width="280" height="130" fill="url(#bg)"/>
+  <circle cx="235" cy="55" r="38" fill="#f07f3c" opacity="0.15"/>
+  <text x="22" y="34" font-family="Arial, sans-serif" font-size="8" font-weight="bold"
+        fill="#f07f3c" letter-spacing="1">PAINEL DE PERFORMANCE - HAMBURGUERIA</text>
+  <text x="20" y="62" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff">Visao geral</text>
+  <text x="20" y="84" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#e85d2a">das vendas.</text>
+  <text x="22" y="104" font-family="Arial, sans-serif" font-size="8" fill="#c9b8a8">Descubra quais hamburgueres vendem mais</text>
+  <text x="22" y="115" font-family="Arial, sans-serif" font-size="8" fill="#c9b8a8">e como o movimento da casa evolui.</text>
+  <!-- hamburguer -->
+  <path d="M205 40 q30 -22 60 0 z" fill="#e8913f"/>
+  <rect x="205" y="40" width="60" height="7" fill="#5cb14a"/>
+  <rect x="205" y="47" width="60" height="6" fill="#d64545"/>
+  <rect x="205" y="53" width="60" height="14" rx="6" fill="#6b3a1f"/>
+  <rect x="205" y="70" width="60" height="12" rx="6" fill="#e8913f"/>
+</svg>

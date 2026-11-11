@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pietro Olimpio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ===== Cabeçalho e menu ===== -->
+    <header>
+        <nav class="menu">
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#conexoes">Conexões</a>
+            <a href="#interesses">Interesses</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ===== Hero: foto no topo + fundo com gradientes ===== -->
+        <section id="hero">
+            <img class="avatar" src="images/perfil.jpeg" alt="minha foto de perfil achatada kk">
+            <h1>Pietro Olimpio</h1>
+            <p class="cargo">Estudante de Desenvolvimento de Sistemas</p>
+            <p class="frase">Aqui você encontra meus projetos, minhas habilidades e um pouco sobre mim.</p>
+            <div class="hero-botoes">
+                <a class="btn" href="#projetos">Ver projetos</a>
+                <button class="btn-print" onclick="window.print()">Imprimir / Salvar em PDF</button>
+            </div>
+        </section>
+
+        <!-- ===== Sobre mim (usa CSS Columns) ===== -->
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <div class="colunas caixa">
+                <p>Me chamo Pietro Olimpio, Tenho 16 anos e sou estudante de Desenvolvimento de Sistemas no Senai. Comecei a mexer com programação
+                    por curiosidade e agora quero seguir como profissão. Ainda estou em Desenvolvimento, mas cada dia aprendendo algo novo.</p>
+
+                <p>Sempre preferi Back e banco de dados, mecher com IA, principalmente de pegar alguma base de dados e extrair as informações dela com pandas e seaborn (imgs) 
+                    com CSS. Em cursos FIC já fiz páginas dashborad de uma Hamburgueria, um outro site de apresentação.</p>
+
+                <p>Quando tenho tempo livre gosto de fica jogando ou testar meu Claude, ouvir música e passar um tempo com
+                    a família e minha namorada. As vezes eu fico olhando o Trendings do github pra ver se acho alguma skill nova.</p>
+            </div>
+        </section>
+
+        <!-- ===== Projetos ===== -->
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="grade">
+                <article class="card">
+                    <div class="thumb"><img src="images/burguer.svg" alt="Banner do Burguer Analytics"></div>
+                    <h3>Burguer Analytics</h3>
+                    <p>Dashboard de vendas com filtros, indicadores, gráficos e comparação de bases CSV. Construído com JavaScript puro; Chart.js e Papa Parse são usados nos gráficos e na leitura de arquivos.</p>
+                    <a class="card-link" href="https://github.com/Pietro-Olimpio/primeiroProjetoComIA" target="_blank">Ver no GitHub</a>
+                </article>
+                <article class="card">
+                    <div class="thumb"><img src="images/crm.svg" alt="Banner do Projeto CRM"></div>
+                    <h3>ProjetoCRM</h3>
+                    <p>Central de atendimento e cadastro para clientes e contratos. Minha contribuição foi desenvolver a biblioteca de funções em PHP: validação de CPF e e-mail, formatação de valores e cálculo de reajustes..</p>
+                    <a class="card-link" href="https://github.com/Pietro-Olimpio/projeto_crm" target="_blank">Ver no GitHub</a>
+                </article>
+                <article class="card">
+                    <div class="thumb"><img src="images/logo.png" alt="Logo da Cantina Sr. Leao"></div>
+                    <h3>Cantina-MVP</h3>
+                    <p>gerenciar o cardápio e o estoque da Cantina Sr. Leão do SENAI. Permite cadastrar, listar, buscar, atualizar e excluir produtos da cantina, persistindo os dados em um banco MongoDB.</p>
+                    <a class="card-link" href="https://github.com/Pietro-Olimpio/Cantina-MVP" target="_blank">Ver no GitHub</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== Habilidades ===== -->
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul class="badges">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Git e GitHub</li>
+                <li>SQL</li>
+                <li>Desenvolvimento com IA</li>
+                <li>PHP</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Linux</li>
+            </ul>
+        </section>
+
+        <!-- ===== Conexões: os 3 links no meio do site ===== -->
+        <section id="conexoes">
+            <h2>Conexões e redes</h2>
+            <p class="sub">Me encontre nessas plataformas:</p>
+            <div class="links-sociais">
+                <a class="social" href="https://github.com/Pietro-Olimpio" target="_blank">
+                    <strong>GitHub</strong><span></span>
+                </a>
+                <a class="social" href="https://wa.me/5519995752812" target="_blank">
+                    <strong>WhatsApp</strong><span></span>
+                </a>
+                <a class="social" href="https://www.linkedin.com/in/pietro-correa" target="_blank">
+                    <strong>LinkedIn</strong><span></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== Interesses pessoais (usa CSS Columns) ===== -->
+        <section id="interesses">
+            <h2>Interesses pessoais</h2>
+            <div class="colunas caixa">
+                <p><strong>Jogos:</strong> Jogo quanto tenho tempo e vontade.</p>
+                <p><strong>Música:</strong>Sempre to escutando musicas.</p>
+                <p><strong>Séries e filmes:</strong> Prefiro de comedia e ação.</p>
+                <p><strong>Esportes:</strong> Academia.</p>
+                <p><strong>Curiosidade:</strong> Existe um repositorio no GitHub, que disponibiliza o Claude Code e outras IA de graça.</p>
+            </div>
+        </section>
+
+        <!-- ===== Contato ===== -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Quer falar comigo? Me chame no WhatsApp ou no LinkedIn.</p>
+            <a class="btn" href="https://wa.me/5519995752812" target="_blank">Chamar no WhatsApp</a>
+        </section>
+
+    </main>
+
+    <!-- ===== Rodapé (gradiente) ===== -->
+    <footer>
+        <p>Pietro Olimpio &copy; 2026</p>
+        <div class="footer-redes">
+            <a href="https://github.com/Pietro-Olimpio" target="_blank">GitHub</a>
+            <a href="https://wa.me/5519995752812" target="_blank">WhatsApp</a>
+            <a href="https://www.linkedin.com/in/pietro-correa" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

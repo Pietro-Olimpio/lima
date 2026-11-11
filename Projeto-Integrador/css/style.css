@@ -1,0 +1,439 @@
+/* ============================================================
+   Portfólio Pessoal — Pietro Correa
+   Paleta: #334589, #323A57, #BBC6F0, #D1DAFF, #9EB1FF
+   Recursos obrigatórios do projeto marcados com comentários
+   ============================================================ */
+
+/* ---------- Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- FONTE PERSONALIZADA (@font-face) ---------- */
+/* Usa a Poppins instalada no computador (ver README.md para baixar os arquivos) */
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins");
+}
+
+/* ---------- Base (SELETORES DE ELEMENTO) ---------- */
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #323A57;
+  /* hexadecimal */
+  background-color: #D1DAFF;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+/* SELETOR AGRUPADO */
+h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 60px 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ---------- Menu (flexbox, como nas aulas) ---------- */
+header {
+  background-color: rgba(50, 58, 87, 0.95);
+}
+
+/* valor RGBA */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 15px;
+}
+
+.menu a {
+  color: #D1DAFF;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  /* TRANSITION */
+}
+
+.menu a:hover {
+  color: #9EB1FF;
+  transform: translateY(-3px);
+}
+
+/* SELETOR AVANÇADO + translate() */
+.menu a:active {
+  transform: translateY(3px);
+}
+
+/* :active como nas aulas */
+
+/* ---------- Hero: foto em cima + MÚLTIPLOS BACKGROUNDS + GRADIENTE 1 ---------- */
+#hero {
+  /* SELETOR DE ID */
+  text-align: center;
+  color: #D1DAFF;
+  padding: 80px 24px 90px;
+  max-width: none;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(158, 177, 255, 0.2), transparent 45%),
+    radial-gradient(circle at 15% 85%, rgba(188, 198, 240, 0.2), transparent 45%),
+    linear-gradient(160deg, #323A57, #334589);
+  /* GRADIENTE 1 + MÚLTIPLOS BACKGROUNDS */
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #9EB1FF;
+  animation: flutuar 2s ease-in-out infinite;
+  /* ANIMATION */
+}
+
+@keyframes flutuar {
+
+  /* ANIMATION @keyframes (igual à aula) */
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#hero h1 {
+  font-size: 40px;
+  margin-top: 15px;
+}
+
+.cargo {
+  color: #9EB1FF;
+  font-weight: 700;
+}
+
+.frase {
+  color: rgba(209, 218, 255, 0.8);
+  margin-bottom: 24px;
+}
+
+.hero-botoes {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ---------- Botões (GRADIENTE 2 + box model) ---------- */
+.btn {
+  display: inline-block;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 100px;
+  background: linear-gradient(90deg, #334589, #9EB1FF);
+  /* GRADIENTE 2 */
+  color: #D1DAFF;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* TRANSITION */
+}
+
+.btn:hover {
+  transform: scale(1.06);
+}
+
+/* scale() */
+.btn:active {
+  transform: scale(0.96);
+}
+
+/* Botão especial com BORDER IMAGE */
+.btn-print {
+  padding: 10px 22px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #D1DAFF;
+  background-color: transparent;
+  border: 4px solid transparent;
+  border-image: linear-gradient(90deg, #9EB1FF, #BBC6F0) 1;
+  /* BORDER IMAGE */
+  transition: all 0.3s ease;
+  /* TRANSITION */
+}
+
+.btn-print:hover {
+  transform: translateX(6px);
+}
+
+/* translate() */
+
+/* ---------- Cards de projeto (flex, como nas aulas) ---------- */
+.grade {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  /* SELETOR DE CLASSE */
+  width: 280px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #BBC6F0;
+  transition: all 0.3s ease;
+  /* TRANSITION */
+}
+
+.card:hover {
+  transform: scale(1.02) rotate(-1deg);
+  border-color: #9EB1FF;
+}
+
+/* scale() + rotate() */
+.thumb {
+  height: 140px;
+  border-radius: 18px 18px 0 0;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* ajusta a imagem dentro da caixa, sem achatar */
+  border-radius: 18px 18px 0 0;
+}
+
+.card h3 {
+  padding: 15px 15px 0;
+}
+
+/* SELETOR AGRUPADO */
+.card p {
+  padding: 6px 15px 0;
+  font-size: 14px;
+}
+
+.tags {
+  display: inline-block;
+  margin: 10px 15px 0;
+  padding: 4px 12px;
+  background-color: #D1DAFF;
+  border-radius: 100px;
+  color: rgb(51, 69, 137);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.card-link {
+  display: inline-block;
+  margin: 12px 15px 18px;
+  color: #334589;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  /* TRANSITION */
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Habilidades (badges com currentColor) ---------- */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.badges li {
+  padding: 8px 18px;
+  border-radius: 100px;
+  border: 2px solid currentColor;
+  /* currentColor */
+  color: #334589;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  /* TRANSITION */
+}
+
+.badges li:hover {
+  color: #9EB1FF;
+}
+
+/* SELETOR AVANÇADO: a borda acompanha via currentColor */
+
+/* ---------- Conexões: os 3 links no meio do site (GRADIENTE 3) ---------- */
+.sub {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.links-sociais {
+  max-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #D1DAFF;
+  background: linear-gradient(90deg, #323A57, #334589);
+  /* GRADIENTE 3 */
+  transition: all 0.3s ease;
+  /* TRANSITION */
+}
+
+.social:hover {
+  transform: translateX(10px);
+}
+
+/* translate() */
+.social strong {
+  font-size: 18px;
+}
+
+.social span {
+  color: rgba(209, 218, 255, 0.7);
+  font-size: 14px;
+}
+
+/* ---------- Interesses: CSS COLUMNS ---------- */
+.colunas {
+  column-count: 2;
+  /* CSS COLUMNS */
+  column-gap: 45px;
+  /* CSS COLUMNS */
+  text-align: justify;
+}
+
+.caixa {
+  /* card branco dos interesses */
+  background-color: rgb(255, 255, 255);
+  border-radius: 14px;
+  padding: 30px;
+}
+
+.colunas p {
+  margin-bottom: 12px;
+}
+
+/* ---------- Contato / Rodapé (GRADIENTE 4) ---------- */
+#contato {
+  text-align: center;
+}
+
+footer {
+  background: linear-gradient(90deg, #323A57, #334589);
+  /* GRADIENTE 4 */
+  color: #D1DAFF;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.footer-redes {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.footer-redes a {
+  color: #9EB1FF;
+  text-decoration: none;
+}
+
+.footer-redes a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Responsividade (igual à aula do keyframe) ---------- */
+@media (max-width: 768px) {
+  .colunas {
+    column-count: 1;
+  }
+
+  /* colunas viram uma */
+  #hero h1 {
+    font-size: 30px;
+  }
+}
+
+/* ---------- Versão para impressão: @page + @media print ---------- */
+@page {
+  size: A4;
+  margin: 2cm;
+}
+
+/* PAGED MEDIA */
+@media print {
+
+  header,
+  .btn,
+  .btn-print,
+  .avatar,
+  .thumb,
+  footer,
+  .hero-botoes {
+    display: none;
+  }
+
+  /* oculta menu/botões/foto */
+  body {
+    background-color: white;
+    color: black;
+    animation: none;
+  }
+
+  /* cores p/ leitura */
+  #hero {
+    background: none;
+    color: black;
+    padding: 15px 0;
+  }
+
+  section {
+    padding: 15px 0;
+  }
+
+  a {
+    color: black;
+  }
+
+  .links-sociais a::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+  }
+
+  /* SELETOR AVANÇADO */
+}
