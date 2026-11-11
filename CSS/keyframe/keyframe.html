@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação Key Frame</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: auto;
+            background-color: #667D6E;
+            padding: 15px;
+            color: white;
+            border-bottom: 5px solid 10px;
+            border-radius: 10px;
+        }
+
+        a{
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+        @keyframes
+        flutuar{
+            0%{
+                transform: translateY(0px);
+            }
+            50%{
+                transform: translateY(8px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+
+
+        .icone-bau{
+            margin: 40px;
+            width: 100px;
+            height: auto;
+            animation: flutuar 2s ease-in-out infinite;
+
+        }
+
+        /* Responsividade para telas menores de 768px */
+        @media (max-width: 768px){
+            .navbar{
+                flex-direction: column;
+                height: auto;
+                gap: 10px;
+                
+            }
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <h1>
+            Gamer Store
+        </h1>
+        <nav>
+            <a href="">Inicio</a>
+            <a href="">Jogos</a>
+            <a href="">Contato</a>
+    </nav>
+    </header>
+    <main>
+        <div class="card-jogo">
+            <img src="https://cdn-icons-png.flaticon.com/512/4883/4883370.png" alt="Baú de Oferta" class="icone-bau">
+        </div>
+    </main>
+</body>
+</html>
