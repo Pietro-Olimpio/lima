@@ -14,7 +14,7 @@ empresas. Público-alvo: recrutadores, professores e outros estudantes da área 
 
 - **HTML** — estrutura semântica (`header`, `nav`, `main`, `section`, `footer`)
 - **CSS** — estilização, responsividade e recursos avançados
-- **JavaScript (1 linha)** — apenas para o botão de impressão (`window.print()`)
+- **JavaScript (1 linha)** — so pro botão de impressão (`window.print()`)
 
 ## Estrutura do projeto
 

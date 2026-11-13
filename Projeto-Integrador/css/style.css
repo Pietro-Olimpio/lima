@@ -1,5 +1,5 @@
 /* ============================================================
-   Portfólio Pessoal — Pietro Correa
+   Meu Portfólio Pessoal — Pietro Olimpio
    Paleta: #334589, #323A57, #BBC6F0, #D1DAFF, #9EB1FF
    Recursos obrigatórios do projeto marcados com comentários
    ============================================================ */
@@ -47,7 +47,7 @@ section {
   margin: 0 auto;
 }
 
-/* ---------- Menu (flexbox, como nas aulas) ---------- */
+/* ---------- Menu (flexbox) ---------- */
 header {
   background-color: rgba(50, 58, 87, 0.95);
 }
