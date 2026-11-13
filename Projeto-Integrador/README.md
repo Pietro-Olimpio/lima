@@ -47,23 +47,6 @@ Projetin/
 | Estilo para impressão | `@page` (A4, margem 2cm) + `@media print` no fim do CSS; botão "Imprimir / Salvar PDF" no hero |
 | Fontes personalizadas | Ver seção "Fontes personalizadas" abaixo |
 
-## Fontes personalizadas (@font-face)
-
-A fonte personalizada já está configurada no CSS com `@font-face` (requisito do
-professor), usando a origem `local()` — ou seja, o site usa a Poppins quando ela
-está instalada no computador, sem precisar de pasta `fonts/`.
-
-Para usar a Poppins em **qualquer** máquina, faça o seguinte:
-
-1. Baixe a fonte **Poppins** (gratuita, Google Fonts): https://fonts.google.com/specimen/Poppins
-2. Crie a pasta `fonts/` na raiz do projeto e coloque dentro `Poppins-Regular.ttf`
-3. No `css/style.css`, troque a linha do `src` para:
-
-```css
-src: url("../fonts/Poppins-Regular.ttf") format("truetype");
-```
-
-Enquanto a Poppins não existir no computador, o site usa o Arial (fallback do `font-family`).
 
 ## Versão para impressão
 
@@ -80,8 +63,5 @@ remove cores de fundo e animações, e mostra o endereço real dos links de cone
 ## Como visualizar
 
 Basta abrir o `index.html` no navegador (duplo clique).
-
-**Foto de perfil:** troque o arquivo `images/profile.svg` pela sua foto (ex.: `profile.jpg`)
-e atualize o `src` da tag `<img class="avatar">` no `index.html`.
 
 **Imagens dos projetos:** imagens tiradas de sites que eu ja fiz, somente uma (ProjetoCRM) foi criada com IA.
